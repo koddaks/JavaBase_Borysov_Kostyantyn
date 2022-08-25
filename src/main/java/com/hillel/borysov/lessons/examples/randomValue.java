@@ -2,11 +2,13 @@ package com.hillel.borysov.lessons.examples;
 
 public class randomValue {
     public static int getRandomDiceNumber() {
-        return (int) (Math.random() * 6) + 1;
+        int min = 1;
+        int max = 100;
+        return (min + (int) (Math.random() * (max - min + 1)));
     }
 
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 50; i++) {
             int x = getRandomDiceNumber();
             System.out.println(x);
         }
