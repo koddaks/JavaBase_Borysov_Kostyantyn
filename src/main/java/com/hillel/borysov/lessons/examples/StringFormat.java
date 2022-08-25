@@ -11,3 +11,19 @@ public class StringFormat {
         return String.format(phrase, name, salary);
     }
 }
+
+//Символ	Обозначение
+//        String     %s
+//
+//        целое число: byte, short, int, long     %d
+//
+//        вещественное число: float, double       %f
+//
+//        boolean      %b
+//
+//        char       %c
+//
+//        Date      %t
+//
+//        Символ %     %%
+//
