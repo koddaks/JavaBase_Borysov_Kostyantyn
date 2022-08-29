@@ -20,13 +20,6 @@ public class SelectionSort {
         printArray(array);
 
 
-
-
-
-
-
-
-
     }
     private static  int min(int[] array, int start) {
 
@@ -43,11 +36,6 @@ public class SelectionSort {
 
 
     }
-
-
-
-
-
 
 
     public static void printArray(int[] array){
