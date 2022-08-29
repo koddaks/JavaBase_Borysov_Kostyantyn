@@ -2,7 +2,7 @@ package com.hillel.borysov.lessons.lesson4;
 
 public class Main {
     public static void main(String[] args) {
-        String li = "Li";
+        final String li = "Li";
         final double totalNumberOfWarriorsLi = 860;
 
         double warriorLiAttack = 13;
@@ -24,7 +24,7 @@ public class Main {
 
     public static void totalAttack(String army,double warriorAttack,double archerAttack,double riderAttack ,double totalNumberOfWarriors) {
         double totalAttackValue = (warriorAttack + archerAttack + riderAttack) * totalNumberOfWarriors;
-        System.out.println("Загальна атка війська " + army + ":" + totalAttackValue);
+        System.out.println("Загальна атака війська " + army + ": " + totalAttackValue);
 
     }
 }
