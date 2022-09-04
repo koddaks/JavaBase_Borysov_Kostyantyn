@@ -22,7 +22,7 @@ public class Main {
 
     }
 
-    public static void totalAttack(String army,double warriorAttack,double archerAttack,double riderAttack ,double totalNumberOfWarriors) {
+    public static void totalAttack(String army,double warriorAttack,double archerAttack,double riderAttack,double totalNumberOfWarriors) {
         double totalAttackValue = (warriorAttack + archerAttack + riderAttack) * totalNumberOfWarriors;
         System.out.println("Загальна атака війська " + army + ": " + totalAttackValue);
 

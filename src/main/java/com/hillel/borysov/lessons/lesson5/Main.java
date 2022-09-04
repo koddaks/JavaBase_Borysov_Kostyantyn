@@ -137,10 +137,11 @@ public class Main {
 
         if (averageKillsFirstTeam > averageKillsSecondTeam) {
             System.out.println("The team " + "\"" + firstTeam + "\"" + " with the score: " + resultFirstTeam + " won!!!");
-        } else {
+        } else if (averageKillsFirstTeam == averageKillsSecondTeam){
+            System.out.println("Draw");
+        }else {
             System.out.println("The team " + "\"" + secondTeam + "\"" + " with the score: " + resultSecondTeam + " won!!!");
         }
-
 
     }
 
