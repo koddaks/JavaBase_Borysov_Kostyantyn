@@ -125,6 +125,7 @@ public class Main {
 
             } else {
                 System.out.println("Wrong data. Try again");
+                scanner.next();
                 continue;
             }
             averageKillsSecondTeam = averageKills(secondTeamFirstPlayerKills, secondTeamSecondPlayerKills, secondTeamThirdPlayerKills, secondTeamFourthPlayerKills, secondTeamFifthPlayerKills);
