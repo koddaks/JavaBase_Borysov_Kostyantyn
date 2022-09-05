@@ -24,7 +24,7 @@ public class Main {
 
 
             while (!scanner.hasNextInt()) {
-                System.out.println("Tha't not a number Duuude! ");
+                System.out.println("That's not a number Duuude! ");
                 scanner.next();
 
                 System.out.println(timer + " seconds left");
