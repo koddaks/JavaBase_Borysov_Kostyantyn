@@ -33,8 +33,8 @@ public class Main {
 
 
                 if (tryValue == 0){
-                    System.out.println("That's not a number Duuude! Oh Noooo! Time is over.");
-                    System.out.println("BOOOOM");
+                    System.out.println("That's not a number Duuude! Oh Noooo! Timer is broken.");
+                    System.out.println("BOOOOM!!!");
 
                     break;
                 }
