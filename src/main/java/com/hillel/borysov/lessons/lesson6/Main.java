@@ -15,7 +15,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         int defuseNumber = getRandomDiceNumber();
-        int tryValue = 11;
+        int tryValue = 3;
         int timer = 10;
 
 
