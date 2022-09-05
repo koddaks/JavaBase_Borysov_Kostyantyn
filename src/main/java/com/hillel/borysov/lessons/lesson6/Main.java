@@ -23,7 +23,7 @@ public class Main {
             System.out.println("Enter Defuse Number: ");
 
 
-            while (!scanner.hasNextInt() && tryValue != 0) {
+            while (!scanner.hasNextInt() && tryValue >= 0) {
 
                 System.out.println("That's not a number Duuude! ");
                 scanner.next();
@@ -32,11 +32,11 @@ public class Main {
                 timer--;
 
 
-                if (tryValue == 0){
-                    System.out.println("That's not a number Duuude! Oh Noooo! Timer is broken.");
+                if (tryValue == 0) {
+                    System.out.println("That's not a number Duuude! Oh Noooo! Timer is broken!");
                     System.out.println("BOOOOM!!!");
 
-                    break;
+                    System.exit(0);
                 }
 
 
@@ -44,8 +44,6 @@ public class Main {
 
 
             int guessNumber = scanner.nextInt();
-
-
 
 
             System.out.println(timer + " seconds left");
