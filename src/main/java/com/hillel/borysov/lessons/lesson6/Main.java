@@ -15,24 +15,48 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         int defuseNumber = getRandomDiceNumber();
-        int tryValue = 9;
+        int tryValue = 11;
         int timer = 10;
+
+
         while (true) {
             System.out.println("Enter Defuse Number: ");
 
+
+            while (!scanner.hasNextInt()) {
+                System.out.println("That not a number Duuude! ");
+                scanner.next();
+
+                System.out.println(timer + " seconds left");
+                timer--;
+
+                if (timer == 0){
+                    System.out.println("Oh Noooo! Time is over: " + timer + " seconds left");
+                    System.out.println("That not a number Duuude! BOOOOM");
+                    break;
+                }
+
+
+            }
+
+
             int guessNumber = scanner.nextInt();
-            System.out.println(timer);
-//            if (guessNumber != scanner.nextInt()){
-//                scanner.next();
-//                System.out.println("Wrong Data. Ha-ha-ha");
-//                tryValue--;
-//            }
-            if (timer == 0) {
+
+
+            System.out.println(timer + " seconds left");
+
+
+            if (guessNumber <= 0 || guessNumber > 10) {
+                System.out.println("Wrong Data.We know that the code number ranges from 1 to 10 hurry up dude");
+
+            }
+            if (timer == 0 || timer < 0) {
                 System.out.println("BOOM!!!");
                 break;
             }
             if (guessNumber != defuseNumber) {
                 tryValue--;
+
             }
             if (tryValue == 0) {
                 System.out.println("BOOM!!!   Nice Try.");
