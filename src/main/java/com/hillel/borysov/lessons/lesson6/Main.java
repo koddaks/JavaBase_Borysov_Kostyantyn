@@ -23,16 +23,19 @@ public class Main {
             System.out.println("Enter Defuse Number: ");
 
 
-            while (!scanner.hasNextInt()) {
+            while (!scanner.hasNextInt() && tryValue != 0) {
+
                 System.out.println("That's not a number Duuude! ");
                 scanner.next();
-
                 System.out.println(timer + " seconds left");
+                tryValue--;
                 timer--;
 
-                if (timer == 0){
-                    System.out.println("Oh Noooo! Time is over: " + timer + " seconds left");
-                    System.out.println("That's not a number Duuude! BOOOOM");
+
+                if (tryValue == 0){
+                    System.out.println("That's not a number Duuude! Oh Noooo! Time is over.");
+                    System.out.println("BOOOOM");
+
                     break;
                 }
 
@@ -43,11 +46,13 @@ public class Main {
             int guessNumber = scanner.nextInt();
 
 
+
+
             System.out.println(timer + " seconds left");
 
 
             if (guessNumber <= 0 || guessNumber > 10) {
-                System.out.println("Wrong Data.We know that the code number ranges from 1 to 10 hurry up dude");
+                System.out.println("Wrong Data.We know that the code number ranges from 1 to 10, hurry up dude");
 
             }
             if (timer == 0 || timer < 0) {
@@ -59,7 +64,7 @@ public class Main {
 
             }
             if (tryValue == 0) {
-                System.out.println("BOOM!!!   Nice Try.");
+                System.out.println("BOOM!!!\tNice Try.");
                 break;
             }
 
