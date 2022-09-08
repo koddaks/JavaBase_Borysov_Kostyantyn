@@ -19,7 +19,7 @@ public class Main {
 
             count++;
 
-            System.out.println("Number of shatle: " + i);
+            System.out.println("Number of shuttle: " + i);
             System.out.println("Count: " + count);
 
 
