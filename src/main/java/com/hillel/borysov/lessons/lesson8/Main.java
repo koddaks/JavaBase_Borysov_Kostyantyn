@@ -19,7 +19,6 @@ public class Main {
         double average = sum / 25;
         return average;
     }
-
     public static void main(String[] args) {
 
         int[] firstTeam = new int[25];
