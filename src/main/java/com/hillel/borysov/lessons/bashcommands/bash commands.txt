@@ -1,0 +1,108 @@
+Best ptactices in automation.mp4>>Chrome DevTools>>Selectors>>Cypress>>Playwrite
+
+man   	справка
+mkdir 	create folder
+rmdir   delete only empty folder
+rm      delete files/folder
+rm -r   delete files/folder
+rm -ri  safe delete
+
+touch   create file
+cd    Смена диктории
+cd -  возврат обратно
+cd .. перейти в родительскую директорию отосительно той в которой мы находимся
+~     домашний каталог
+pwd   print working directory
+clear 
+ls [ключи][параметры]    содержимое папки
+ls -l	       детальное содержимое папки
+ls -a	       детальное содержимое папки включая скрытые файлы/папки
+ls -A	       детальное содержимое папки включая скрытые файлы
+ls -a -l
+ls -lh         детальная ифомация о файлах и размерах папки/файлы
+ls -R	       содержимое папок
+ls -RAlh       содержимое папок и детальная ифомация о файлах и размерах папки/файлы и скрытых тоже
+mv [from]folde/file[to]folder/file           move (mv two/log.txt two/log2.txt) переместили файл и переименовали его же(опеация почти мгновенна)
+cp [from]folde/file[to]folder/file           copy
+
+
+
+
+cat		объединение текстовых файлов и отображение текста
+cat log.txt log1.txt  объединение текстовых файлов и отображение текста
+less            работа с текстами (in file  "/wordTofind")
+
+nano            текстовый редактор 
+vi		текстовый редактор с модальным итерфейсом (":w"- save file  ":q" - exit from file ":q!" - exit without save file ":1" - переход на номер строки "/word" -find word ":u" - отмена последнего изменения)
+grep            поиск по тестовым файлам(grep )
+grep -i         Игнор регистра букв
+grep -v         показать только несовпавшие строки
+grep -c         подсчет строк
+grep -cv
+grep -R шаблон "папка/" рекурсивный поиск по директории "папка"
+
+find "folder""keys"                  
+find . -name first_file
+find . -name *.mp3
+find -type d     			поиск только по папкам
+find . -type d -name "one*"
+find . -type f -name "*e*" 		поиск только по файлам
+find . -name "*.mp3" -delete  		удалить найденые файлы
+find . -name "*.mp3" -delete -print 	удалить найденые файлы и напечатать то было удалено
+
+echo		вывод строки "текст" в консоль
+echo $PATH
+echo "Hello" > file.txt   запись в файл
+echo "I say Hello!" > file.txt   перезапись в файл
+echo "Man???" >> file.txt   дозапись рзультата команды в файл
+
+команда|команда   передача вывода одной команды на ввод другой
+cat file.txt | grep File   ищет строку "File" в файле file.txt
+ls | grep File
+
+
+
+
+ps список процессов
+ps x процессы отсоединенные от терминала
+ps u процессы пользовател
+ps au все процессы терминала
+ps aux все процессы
+
+top вывести таблицу процессов 
+kill завершить процесс по его PID
+kill -l все типы сигналов к которым килл может обращаться
+kill -9 [PID] завершить немедленно
+
+ping google.com (CTRL + C    stop)
+ping -c 3       количество запросов
+ping -i		интервал в "число" секунду
+ping -c 3 -i 2 google.com
+ping -a         звуковой сигнал
+
+curl    послать GET запрос
+curl -L переходить по редиректам
+curl -L ya.ru --verbose не только ответ а так же все состояния которые мы проходили
+curl https://reqres.in/api/users  GET запрос
+curl https://reqres.in/api/users?page=2         отправка запроса с параметрами 
+curl -X POST https://reqres.in/api/login --data "email=peter@klaven" --data "password=pass"
+curl -H  отпавка запроса с хедером
+
+
+ssh testuse@ssh.learqa.ru                   доступ на удаленный сервер
+exit                                        выход из удаленного соединения
+scp  testuse@ssh.learqa.ru:/home/koddaks/test.txt .               копирование с удаленной машины
+scp  test.txt testuse@ssh.learqa.ru:/home/testuser/test.txt             копирование на удаленную машину
+
+
+sed      потоковый текстовый редактор
+echo 123123 | sed 's(замена)/1(значение которое ищем)/5(значение на которое меняем)/(g заменяет все элементы)(номер вхождения)'	замена первой подстроки
+sed s/test/Hello/ my.file			заменить подстроки в файле
+sed s/test/Hello/ my.file >> result.txt		заменить подстроки в файле и вывод результата в отдельный файл
+sed "3 s/test/hello/" my.file			заменить определенную строку в файле(в данном примере 3)
+sed 's/text/text1/;s/text2/text3'		замена по двум шаблонам (sed 's/text/text1/;s/text2/text3')
+
+
+16 видео закончил
+
+Best ptactices in automation.mp4>>Chrome DevTools>>Selectors>>Cypress>>Playwrite>>
