@@ -71,12 +71,6 @@ public class Main {
                 scanner.nextLine();
             }
 
-//               else if (scanner.nextInt() < 0 || scanner.nextInt() > 9 ) {
-//                System.out.println("Integer number from 0 to 9.");
-//                scanner.nextLine();
-//            }
-
-
         }
         return tmp;
     }
