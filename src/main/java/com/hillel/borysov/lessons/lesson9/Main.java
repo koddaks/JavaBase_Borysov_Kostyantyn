@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Your numbers is: " + Arrays.toString(generationUserArray(userArray)));
         System.out.print("Lottery numbers is: ");
         generationLotteryArray(lotteryArray);
-        System.out.println("Number of coincidences:" + numberOfCoincidences(userArray, lotteryArray));
+        System.out.println("Number of coincidences after sort Arrays: " + numberOfCoincidences(userArray, lotteryArray));
 
     }
 
@@ -20,7 +20,9 @@ public class Main {
         int numberOfCoincidences = 0;
 
         Arrays.sort(userArray);
+        System.out.println("Numbers of user after sort: " + Arrays.toString(userArray));
         Arrays.sort(lotteryArray);
+        System.out.println("Numbers of lottery after sort: " + Arrays.toString(lotteryArray));
 
         for (int i = 0; i < lotteryArray.length; i++) {
             if (userArray[i] == lotteryArray[i]) {
