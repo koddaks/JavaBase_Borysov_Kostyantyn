@@ -1,4 +1,4 @@
-package com.hillel.borysov.lessons.examples.constructors2;
+package com.hillel.borysov.examples.constructors2;
 
 public class Animal {
 

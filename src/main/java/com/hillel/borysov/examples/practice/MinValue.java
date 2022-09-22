@@ -1,4 +1,4 @@
-package com.hillel.borysov.lessons.examples.practice;
+package com.hillel.borysov.examples.practice;
 
 public class MinValue {
     public static void main(String[] args) {

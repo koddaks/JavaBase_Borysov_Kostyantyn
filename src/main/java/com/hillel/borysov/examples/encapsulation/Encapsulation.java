@@ -1,4 +1,4 @@
-package com.hillel.borysov.lessons.examples.encapsulation;
+package com.hillel.borysov.examples.encapsulation;
 
 public class Encapsulation {
     private int a;

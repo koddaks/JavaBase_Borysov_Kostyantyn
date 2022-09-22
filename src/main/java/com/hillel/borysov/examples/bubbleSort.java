@@ -1,4 +1,4 @@
-package com.hillel.borysov.lessons.examples;
+package com.hillel.borysov.examples;
 
 public class bubbleSort {
 // Сортировка Пузырьком

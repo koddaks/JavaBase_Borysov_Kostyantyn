@@ -1,4 +1,4 @@
-package com.hillel.borysov.lessons.examples;
+package com.hillel.borysov.examples;
 
 import java.io.File;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.hillel.borysov.lessons.examples.constructors;
+package com.hillel.borysov.examples.constructors;
 
 public class Crocodile {
     String name;

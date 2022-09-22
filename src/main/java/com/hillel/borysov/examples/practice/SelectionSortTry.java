@@ -1,6 +1,6 @@
-package com.hillel.borysov.lessons.examples.practice;
+package com.hillel.borysov.examples.practice;
 
-import static com.hillel.borysov.lessons.examples.practice.MinValue.printArray;
+import static com.hillel.borysov.examples.practice.MinValue.printArray;
 
 public class SelectionSortTry {
     public static void main(String[] args) {

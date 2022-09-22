@@ -1,4 +1,4 @@
-package com.hillel.borysov.lessons.examples;
+package com.hillel.borysov.examples;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
