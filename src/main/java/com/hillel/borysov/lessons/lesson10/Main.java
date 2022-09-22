@@ -50,7 +50,6 @@ public class Main {
 
 
     }
-
     public static void transposition(int[][] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array[i].length; j++) {
