@@ -3,7 +3,7 @@ package com.hillel.borysov.lessons.examples.practice;
 public class Factorial {
 
     public static void main(String[] args) {
-        factorial(10);
+        System.out.println(factorial(5));
     }
 
 
