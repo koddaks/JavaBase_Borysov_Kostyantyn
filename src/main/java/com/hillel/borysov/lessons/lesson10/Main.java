@@ -19,6 +19,7 @@ public class Main {
     }
 
 
+
     public static int getSize(Scanner scanner) {
         System.out.println("Enter Integer :");
         int inputValue;
